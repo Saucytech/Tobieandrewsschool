@@ -32,9 +32,9 @@ function opensmugLinkWindow(smugid)
 			smugmugbase + '/SStest-School-District/SStest-School-Name/SStest-GradeYear'
 		]
 		var smugidname = "notfound";
-		urlList.forEach(function(url {
-			if (getQueryVariable("customerid")) {
-				smugidname = getQueryVariable("customerid");
+		urlList.forEach(function((url) {
+			if (getQueryVariable(url)) {
+				smugidname = getQueryVariable(url));
 			}
 		})	
 	}
