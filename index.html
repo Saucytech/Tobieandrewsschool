@@ -6,7 +6,8 @@
     <h1>Opening Client Gallery...</h1>
 
     <script type="text/javascript">
-      
+            var smugmugDomain = "https://tobieandrewsschoolphotography.smugmug.com/SStest-School-District/SStest-School-Name/Gallery-Access-Page/";
+
       function opensmugLinkWindow(smugid) {
         
         function getQueryVariable(variable){
@@ -36,9 +37,9 @@
       			}
       		})
       	
-      		var URL = smugmugbase + smugidname;
+      		var url = smugmugbase + smugidname;
           console.log(smugmugbase , smugidname)
-      		window.location = URL;
+      		window.location = url;
       	}
     </script>
     <script type="text/javascript">
