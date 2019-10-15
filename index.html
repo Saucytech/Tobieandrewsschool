@@ -24,7 +24,6 @@ function opensmugLinkWindow(smugid)
 		
 		
 		// The link below is the folder that's being looked into //
-
 		var smugmugbase = "https://tobieandrewsschoolphotography.smugmug.com";
 		var urlList = [ 
 			smugmugbase,
@@ -32,18 +31,15 @@ function opensmugLinkWindow(smugid)
 			smugmugbase + '/SStest-School-District/SStest-School-Name', 
 			smugmugbase + '/SStest-School-District/SStest-School-Name/SStest-GradeYear'
 		]
-		var smugidname = getQueryVariable("customerid");
-		
-		
-		if (smugidname  == "")
-	{
 		var smugidname = "notfound";
-		
-		
+		urlList.forEach(function(url {
+			if (getQueryVariable("customerid")) {
+				smugidname = getQueryVariable("customerid");
+			}
+		})	
 	}
 		var URL = smugmugbase + smugidname;
 		window.location=URL;
-	
 	}
 	
 </script>
